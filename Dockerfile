@@ -3,7 +3,8 @@ MAINTAINER BROBIRD <brobirdcn@gmail.com>
 
 COPY root/ /
 
-RUN set -xe \
+RUN wget -O /aria2c https://github.com/BROBIRD/docker-aria2/releases/download/1.34.0-4096/aria2c \
+    && set -xe \
     && chmod +x /aria2c \
     && chmod +x /init.sh
 
