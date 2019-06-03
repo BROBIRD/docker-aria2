@@ -30,7 +30,7 @@ echo "[DONE]"
 
 echo "Starting aria2c"
 
-exec aria2c \
+exec /aria2c \
     --conf-path=/config/aria2.conf \
   > /dev/stdout \
   2 > /dev/stderr
