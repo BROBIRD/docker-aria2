@@ -1,7 +1,7 @@
 FROM debian:latest as builder
 MAINTAINER BROBIRD <brobirdcn@gmail.com>
 
-COPY build_aria2.sh build_aria2.sh
+COPY build_aria2.sh ./build_aria2.sh
 
 RUN chmod +x build_aria2.sh \
     ./build_aria2.sh
