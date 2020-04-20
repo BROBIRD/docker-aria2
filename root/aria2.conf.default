@@ -1,7 +1,7 @@
 save-session=/config/aria2.session
 input-file=/config/aria2.session
 save-session-interval=60
-
+disable-ipv6=true
 dir=/downloads
 
 file-allocation=prealloc
@@ -11,11 +11,11 @@ enable-rpc=true
 rpc-listen-port=6800
 rpc-allow-origin-all=true
 rpc-listen-all=true
+rpc-secret=brobird
 
-rpc-secret=<password>
-
-auto-file-renaming=false
-
-max-connection-per-server=16
-min-split-size=1M
-split=16
+auto-file-renaming=true
+max-concurrent-downloads=32
+max-connection-per-server=4096
+min-split-size=256K
+split=128
+continue=true
