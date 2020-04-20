@@ -4,7 +4,7 @@ MAINTAINER BROBIRD <brobirdcn@gmail.com>
 COPY build_aria2.sh ./build_aria2.sh
 
 RUN chmod +x build_aria2.sh \
-    ./build_aria2.sh
+    && ./build_aria2.sh
 
 
 FROM alpine:latest
