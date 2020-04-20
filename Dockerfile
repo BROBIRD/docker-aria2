@@ -10,7 +10,7 @@ RUN chmod +x build_aria2.sh \
 FROM alpine:latest
 
 COPY root/ /
-COPY --from=builder /tmp/aria2/src/aria2c /aria2c
+COPY --from=builder /aria2c /aria2c
 
 RUN apk update \ 
     && apk add ca-certificates \

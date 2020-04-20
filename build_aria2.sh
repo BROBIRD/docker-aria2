@@ -185,6 +185,7 @@ ARIA2_PACKAGE() {
     cd $BUILD_DIR/aria2/src
     strip aria2c
     mkdir -p $OUTPUT_DIR
+    cp aria2c /aria2c
     tar zcvf $OUTPUT_DIR/aria2-$ARIA2_VER-static-linux-$dpkgARCH.tar.gz aria2c
 }
 
